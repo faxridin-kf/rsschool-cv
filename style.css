@@ -553,5 +553,243 @@ button {
   .card-grid {
     grid-template-columns: repeat(4, 1fr);
   }
+}@media (max-width: 1100px) {
+  .hero-avatar {
+    width: 300px;
+    height: 300px;
+    border-width: 10px;
+  }
 }
+
+@media (max-width: 836px) {
+  .hero-content {
+    flex-direction: column;
+  }
+
+  .hero-avatar {
+    order: 0;
+    width: 300px;
+    height: 300px;
+    border-width: 10px;
+    margin-bottom: 17px;
+  }
+
+  .hero-description {
+    margin: 0 auto;
+  }
+
+  .feature-item {
+    flex-basis: fill;
+  }
+
+  .hero-text {
+    order: 1;
+    text-align: center;
+  }
+
+  .edu-block {
+    justify-content: start;
+  }
+
+  .contacts-title,
+  .contacts-link {
+    display: block;
+    text-align: center;
+  }
+
+  .contacts-link {
+    margin-right: 0;
+  }
+
+  .instagram {
+    margin-bottom: 15px;
+  }
+
+  .two {
+    display: flex;
+    justify-content: center;
+  }
+
+  .contacts-policy {
+    display: block;
+    text-align: center;
+  }
+
+  .edu-info,
+  .code-example,
+  .lang {
+    margin-bottom: 20px;
+  }
+
+  .projects-slide {
+    flex-direction: column;
+  }
+
+  .project-image {
+    margin-bottom: 46px;
+  }
+
+  .contacts-block {
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .contacts-form {
+    margin-bottom: 58px;
+  }
+}
+
+@media (max-width: 546px) {
+  .hero {
+    padding-bottom: 75px;
+  }
+
+  .hero-avatar {
+    width: 113px;
+    height: 113px;
+    border-width: 3px;
+  }
+
+  .hero-header {
+    margin-bottom: 38px;
+  }
+
+  .social-link {
+    margin-left: 5px;
+  }
+
+  .hero-title {
+    font-size: 24px;
+    line-height: 28px;
+  }
+
+  .hero-subtitle {
+    font-size: 16px;
+    line-height: 27px;
+    margin-bottom: 5px;
+  }
+
+  .hero-description {
+    font-size: 14px;
+    line-height: 140%;
+  }
+
+  .section {
+    padding: 60px 0;
+  }
+
+  .section-title {
+    font-size: 19px;
+    line-height: 22px;
+    margin-bottom: 60px;
+  }
+
+  /* .feature-item {
+    flex-basis: 0%;
+    margin-bottom: 30px;
+  } */
+
+  .features-title {
+    font-size: 28px;
+    line-height: 28px;
+  }
+
+  .features-text {
+    font-size: 14px;
+    line-height: 28px;
+  }
+
+  .project-title {
+    font-size: 18px;
+    line-height: 150%;
+  }
+
+  .project-time,
+  .project-cost,
+  .project-feedback {
+    flex-basis: 100%;
+    margin-bottom: 30px;
+  }
+
+  .project-poragraph {
+    font-size: 14px;
+  }
+
+  .contacts-form {
+    padding: 40px 19px;
+  }
+
+  .form-title {
+    font-size: 15px;
+    line-height: 140%;
+  }
+
+    .form-button {
+      cursor: pointer;
+      font-size: 10px;
+    }
+
+    .contacts-phone,
+    .contacts-mail {
+      flex-basis: 100px;
+      margin-bottom: 30px;
+    }
+
+    .contacts-title {
+      font-size: 18px;
+      line-height: 21px;
+    }
+
+    .contacts-link {
+      font-size: 14px;
+      line-height: 16px;
+      margin-bottom: 13px;
+    }
+
+    .contacts-phone {
+      margin-right: 55px;
+    }
+
+    .instagram {
+      display: flex;
+      margin: 0;
+      margin-bottom: 13px;
+    }
+
+    .mailto {
+      margin-right: 0;
+    }
+    }
+
+    @media (max-width: 464px) {
+      .nav {
+        display: none;
+      }
+
+      .features-block {
+        justify-content: center;
+      }
+
+      .feature-item {
+        flex-basis: 36%;
+      }
+
+      .contacts-title {
+        text-align: center;
+        width: 150px;
+      }
+
+      .social-title {
+        width: 150px;
+        margin: 0 auto;
+        margin-bottom: 15px;
+      }
+
+      .instagram {
+        display: block;
+        text-align: center;
+      }
+
+      .contacts-social {}
+    }
 
