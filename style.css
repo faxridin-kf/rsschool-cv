@@ -1,0 +1,242 @@
+:root {
+  --text-light: rgba(255, 255, 255, 0.6);
+  --text-lighter: rgba(255, 255, 255, 0.9);
+  --spacing-s: 8px;
+  --spacing-m: 16px;
+  --spacing-l: 24px;
+  --spacing-xl: 32px;
+  --spacing-xxl: 64px;
+  --width-container: 1200px;
+}
+
+* {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  scroll-behavior: smooth;
+}
+
+.img {
+  max-width: 100%;
+}
+
+body {
+  background-color: #20202d;
+  margin: 0;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  height: 100%;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+ul li {
+  list-style: none;
+  margin-right: 10px;
+}
+
+ul li a {
+  text-decoration: none;
+  color: #f5f5f5
+}
+
+.hero-section {
+  align-items: flex-start;
+  display: flex;
+  min-height: 100%;
+  justify-content: center;
+  padding: var(--spacing-xxl) var(--spacing-l);
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-column-gap: var(--spacing-l);
+  grid-row-gap: var(--spacing-l);
+  max-width: var(--width-container);
+  width: 100%;
+}
+
+.card {
+  list-style: none;
+  position: relative;
+}
+
+.card:before {
+  content: '';
+  display: block;
+  padding-bottom: 150%;
+  width: 100%;
+}
+
+.card__background {
+  background-size: cover;
+  background-position: center;
+  border-radius: var(--spacing-l);
+  bottom: 0;
+  filter: brightness(0.75) saturate(1.2) contrast(0.85);
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transform-origin: center;
+  transform: scale(1) translateZ(0);
+  transition:
+    filter 200ms linear,
+    transform 200ms linear;
+}
+
+.card:hover .card__background {
+  transform: scale(1.05) translateZ(0);
+}
+
+.card-grid:hover>.card:not(:hover) .card__background {
+  filter: brightness(0.5) saturate(0) contrast(1.2) blur(20px);
+}
+
+.card__content {
+  left: 0;
+  padding: var(--spacing-l);
+  position: absolute;
+  top: 0;
+}
+
+.card__category {
+  color: var(--text-light);
+  font-size: 0.9rem;
+  margin-bottom: var(--spacing-s);
+  text-transform: uppercase;
+}
+
+.card__heading {
+  color: var(--text-lighter);
+  font-size: 1.9rem;
+  text-shadow: 2px 2px 20px rgba(0, 0, 0, 0.2);
+  line-height: 1.4;
+  word-spacing: 100vw;
+}
+
+/* project */
+
+
+.container {
+  width: 90%;
+  max-width: 945px;
+  margin: auto;
+}
+
+.section {
+  /* padding-top: 64px; */
+  padding-bottom: 92px;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+}
+
+.section-title {
+  margin: 0;
+  margin-bottom: 84px;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 42px;
+}
+
+.hero {
+  padding-top: 50px;
+  padding-bottom: 150px;
+  background: linear-gradient(0.01deg, #000000 0.01%, rgba(0, 0, 0, 0) 95.44%);
+}
+
+.hero-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 105px;
+}
+
+.social-link {
+  margin-left: 20px;
+}
+
+.social-link:first-child {
+  margin-left: 0;
+}
+
+.hero-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero-subtitle {
+  display: block;
+  font-size: 24px;
+  line-height: 28px;
+  color: #ffbb01;
+  bottom: 14px;
+}
+
+.hero-title {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 59px;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.hero-description {
+  font-size: 16px;
+  line-height: 28px;
+  max-width: 420px;
+  margin-bottom: 38px;
+}
+
+.mailto,
+button {
+  background: linear-gradient(180deg, #fdde76 0%, #ffbb01 100%);
+  box-shadow: 0px 4px 0px #b68500;
+  border: none;
+  border-radius: 5px 5px 10px 10px;
+  padding: 24px 42px;
+  font-size: 12px;
+  line-height: 14px;
+  text-transform: uppercase;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.free {
+  color: rgb(26, 25, 25);
+  font-size: 12px;
+  line-height: 14px;
+  text-transform: uppercase;
+  font-weight: bold;
+  display: inline-block;
+
+}
+
+.hero-avatar {
+  width: 650px;
+  height: 389px;
+  background-color: #fff;
+  border-radius: 50%;
+  background-image: url("./img/avatar.jpg");
+  background-repeat: no-repeat;
+  background-position: 10 center 10px;
+  background-size: cover;
+  border: 9px solid #eca6ff;
+}
+
