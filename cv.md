@@ -28,3 +28,27 @@ Programming is everything to me! In my free time I read books on self-developmen
 * CMS: wordpress, october
 * Git, GitHub
 * IDE: VScode, Atom, Sublime
+
+## Code example
+```
+function absentVowel(x) {
+  var vowels = 'aeiou';
+  for (var i in vowels) {
+    if (x.toLowerCase().indexOf(vowels[i]) == -1){
+      return Number(i);
+    }
+  }
+```
+## EDUCATION AND COURSES
+* Dgital city academy: Front-end
+* Egineering lyceum: (Eonomics)
+* TUIT university: (Computer engineering)
+## WORK EXPERIENCE
+* **Tesla clone:** [promo website tesla](https://samsung-9b5d6.firebaseapp.com/)
+* **Delivery food:** [website delivery sushi](https://faxridin-kf.github.io/deliveryclub)
+* **Covid tracker:** [covid tracker site](https://covid-19-tracker-ee43c.web.app)
+## LANGUAGE
+* Russian(Advance)
+* English (Intermediate)
+* Uzbek(Advance)
+
