@@ -468,7 +468,6 @@ button {
 
 .contacts-block {
   display: flex;
-  align-items: center;
   justify-content: space-between;
 }
 
@@ -554,9 +553,9 @@ button {
     grid-template-columns: repeat(4, 1fr);
   }
 }@media (max-width: 1100px) {
-  .hero-avatar {
-    width: 300px;
-    height: 300px;
+   .hero-avatar {
+    width: 481px;
+    height: 313px;
     border-width: 10px;
   }
 }
@@ -633,6 +632,10 @@ button {
     align-items: center;
     flex-direction: column;
   }
+  
+  .flex-contact {
+    margin: 0 auto;
+  }
 
   .contacts-form {
     margin-bottom: 58px;
@@ -656,6 +659,12 @@ button {
 
   .social-link {
     margin-left: 5px;
+  }
+  
+  .hero-avatar {
+    width: 113px;
+    height: 113px;
+    border-width: 3px;
   }
 
   .hero-title {
@@ -792,4 +801,24 @@ button {
 
       .contacts-social {}
     }
+@media(max-width:400px) {
+    pre {
+      font-size: 10px;
+    }
+
+    .contacts-title {
+      width: 100%
+    }
+
+    .contacts-phone {
+      margin-right: 0;
+      width: 100%;
+      flex-basis: 100%;
+    }
+
+    .contacts-mail {
+      width: 100%;
+      flex-basis: 100%;
+    }
+  }
 
